@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="js/lodash.js"></script>
+	<script src="js/ripple-0.17.4.js"></script>
+	<script src="js/qrcode.js"></script>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<div class="wallet">
+		<img src="./images/wallet.png"/>
+    <div id="secret" class="secret-text"></div>
+    <div id="address" class="address-text"></div>
+    <div id="qrcodeSecret" class="qr-secret"></div>
+    <div id="qrcodeAddress" class="qr-address"></div>
+	</div>
+	<div class="buttons">
+		<button type="button" onclick="newripple()">Generate new</button>
+		<button type="button" onClick='window.print()'>Print</button>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
