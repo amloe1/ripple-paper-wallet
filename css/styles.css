@@ -6,16 +6,12 @@
        url('../fonts/SFUIDisplay-Medium.ttf') format('truetype');
 }
 
-html body {
+body {
   font-family: 'SF UI Display Medium',sans-serif;
   font-weight: 400;
   overflow-y: scroll;
   background-image: url(../images/background.jpg);
-}
-
-html body a {
-  color: #368A98;
-  text-decoration: none;
+  margin: 0;
 }
 
 .wallet {
@@ -94,6 +90,7 @@ button:hover {
 
 @media print {
   body {
+    background-image: none;
     height: 750px;
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
