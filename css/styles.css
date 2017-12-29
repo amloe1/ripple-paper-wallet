@@ -41,14 +41,14 @@ html body a {
   word-wrap: break-word;
 }
 
-.address-text {
+.secret-text {
   top: 78px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
 }
 
-.secret-text {
+.address-text {
   top: 294px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 
 .qr-secret, .qr-address {
@@ -58,11 +58,11 @@ html body a {
   height: 120px;
 }
 
-.qr-secret {
+.qr-address {
   top: 48px;
 }
 
-.qr-address {
+.qr-secret {
   top: 263px;
 }
 
