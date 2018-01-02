@@ -54,11 +54,11 @@ body {
   height: 120px;
 }
 
-.qr-address {
+.qr-secret {
   top: 48px;
 }
 
-.qr-secret {
+.qr-address {
   top: 263px;
 }
 
