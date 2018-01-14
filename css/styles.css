@@ -21,8 +21,15 @@ body {
   position: relative;
 }
 
-.wallet img {
+.wallet img, .instruction img {
   width: 100%;
+}
+
+.instruction {
+  width: 1000px;
+  margin: 60px auto 20px auto;
+  position: relative;
+  border: 2px dotted #999999;
 }
 
 .address-text, .secret-text {
@@ -47,6 +54,61 @@ body {
   letter-spacing: 0.15em;
 }
 
+.instruction-text {
+  position: absolute;
+  left: 356px;
+  top: 252px;
+  width: 260px;
+  height: 165px;
+  font-size: 10px;
+  color: #193039;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.instruction-text ul {
+  list-style: none;
+}
+
+.instruction-text ul li {
+  margin-bottom: 5px;
+}
+
+.instruction-text a {
+  color: #368A98;
+  text-decoration: none;
+}
+
+.amount-added-text, .date-text, .note-text {
+  position: absolute;
+  height: 20px;
+  font-size: 10px;
+  color: #193039;
+  font-weight: 500;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  text-transform: uppercase;
+}
+
+.amount-added-text {
+  left: 533px;
+  top: 146px;
+  width: 80px;
+}
+
+.date-text {
+  left: 378px;
+  top: 146px;
+  width: 40px;
+}
+
+.note-text {
+  left: 574px;
+  top: 76px;
+  width: 40px;
+}
+
 .qr-secret, .qr-address {
   position: absolute;
   right: 106px;
@@ -55,11 +117,11 @@ body {
 }
 
 .qr-secret {
-  top: 48px;
+  top: 46px;
 }
 
 .qr-address {
-  top: 263px;
+  top: 258px;
 }
 
 .qr-secret img, .qr-address img {
@@ -82,6 +144,8 @@ button {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  font-family: 'SF UI Display Medium',sans-serif;
+  font-weight: 400;
 }
 
 button:hover {
